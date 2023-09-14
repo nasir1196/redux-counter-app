@@ -97,11 +97,11 @@ const Counter = () => {
             <h2>Counter App</h2>
             <h3>Counter: {newCount}</h3>
             <div style={{ margin: "1rem" }}>
-                <button style={styled1} onClick={handleIncrement}>Increment</button>
-                <button style={styled2} onClick={handleDecrement}>Decrement</button>
+                <button style={styled1} onClick={handleIncrement}>INCREMENT</button>
+                <button style={styled2} onClick={handleDecrement}>DECREMENT</button>
                 <button style={styled1} onClick={handleIncrementByTen}>INCREMENT BY 10</button>
-                <button style={styled2} onClick={handleDecrementByTen}>Decrement BY 10</button>
-                <button style={styled3} onClick={handleReset}>Reset</button>
+                <button style={styled2} onClick={handleDecrementByTen}>DECREMENT BY 10</button>
+                <button style={styled3} onClick={handleReset}>RESET</button>
             </div>
             <div>
                 <input type="number" placeholder='Enter Value' style={styled4} value={getValue.volume} onChange={(e) => setGetValue({ ...getValue, volume: e.target.value })} />
