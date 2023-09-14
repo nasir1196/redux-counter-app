@@ -14,7 +14,8 @@ const Counter = () => {
     const handleDecrement = () => {
         if (count > 0) {
             dispatch(decrementCounter())
-        } else {
+        }
+        else {
             alert("Value Never Decrement because value less than from decrements values")
         }
     }
@@ -29,7 +30,6 @@ const Counter = () => {
         } else {
             alert("Value Never Decrement because value less than from decrements values")
         }
-
     }
 
     const handleReset = () => {
@@ -42,9 +42,12 @@ const Counter = () => {
     }
     const handleUpdateByValueDecrement = () => {
         const values = parseInt(getValue.volume)
-        if(count > values){
+        if (count > values) {
             dispatch(updateByValueDecrement(values))
-        }else{
+        } else if (count === values) {
+            dispatch(updateByValueDecrement(values))
+        }
+        else {
             alert("Value Never Decrement because value less than from decrements values")
         }
     }
